@@ -1,0 +1,75 @@
+.slider img {
+  height: 100vh;
+}
+
+.slider .caption {
+  text-align: left;
+  bottom: 8rem;
+  z-index: 2;
+}
+
+.caption span::after {
+  content: " \0026";
+}
+.caption h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #ff4838;
+}
+
+.caption p {
+  max-width: 60%;
+}
+
+.text-bnr {
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ff4838;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.baner-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.clrs {
+  background-color: #ff4838;
+  border: 1px solid #ff4838;
+  margin-right: 10px;
+  color: #ffffff;
+  transition: all linear 0.3s;
+}
+.clrs:hover {
+  background-color: transparent;
+  color: #ff4838;
+}
+
+.trns {
+  background-color: transparent;
+  color: #ff4838;
+  border: 1px solid #ff4838;
+  transition: all linear 0.3s;
+}
+.trns:hover {
+  background-color: #ff4838;
+  color: #ffffff;
+}

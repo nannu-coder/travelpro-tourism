@@ -1,0 +1,27 @@
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo span {
+  color: #ff4838;
+}
+
+.nav-btn {
+  background-color: #ff4838;
+  border: 1px solid #ff4838;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 5px;
+}
+
+.nav-button a {
+  margin: 0;
+}
+.user_name {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  top: 8px;
+  margin-right: 8px;
+}
