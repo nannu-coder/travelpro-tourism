@@ -17,8 +17,8 @@ const MyBooking = () => {
             <Container>
                 <Row>
                     <div className="col-lg-12">
-                        <div className="my_boking text-center">
-                            <h1>My Boking</h1>
+                        <div style={{ 'marginTop': '30px' }} className="my_boking text-center">
+                            <h1>My Boked Item</h1>
                             <div className="col-lg-12">
 
                             </div>

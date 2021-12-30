@@ -2,7 +2,7 @@
   width: 50%;
 }
 .booking form {
-  border: 1px solid red;
+  border: 1px solid #c5c5c5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,4 +15,21 @@
 textarea {
   width: 75%;
   margin: 10px 0;
+  border: 1px solid #c5c5c5;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 5px;
+}
+.booking form input:active,
+.booking form input:focus-visible,
+.booking form input:visited {
+  border: 1px solid #c5c5c5;
+  background-color: transparent;
+  box-shadow: none;
+}
+.booking form input[type="submit"] {
+  width: 30%;
+  background: #ff4838;
+  border: 1px solid #ff4838;
+  color: #ffffff;
 }

@@ -25,3 +25,10 @@
   top: 8px;
   margin-right: 8px;
 }
+
+.dropdown a:visited,
+.dropdown a:focus,
+.dropdown a,
+.dropdown a:hover {
+  color: rgba(0, 0, 0, 0.55);
+}

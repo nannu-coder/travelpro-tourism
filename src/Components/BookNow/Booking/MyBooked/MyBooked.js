@@ -40,18 +40,30 @@ const MyBooked = (props) => {
         <>
             {
                 props?.bookingUser?.LogedinUser === user.email ? <div className="col-lg-4">
-                    <Card className='mt-5'>
+                    <Card style={{ 'borderRadius': '10px' }} className='mt-5'>
                         <Card.Img variant="top" src={details?.img} />
                         <Card.Body>
-                            <Card.Title>{details?.date}</Card.Title>
-                            <Card.Text>
-                                {details?.des}
+                            <Card.Title className='card_title'>
+                                <p>{details?.date}</p>
+                            </Card.Title>
+                            <Card.Text className='card_text'>
+                                <p>{details?.des}</p>
                             </Card.Text>
-                            <button onClick={() => handleDelete(props.bookingUser?._id)} className='pkg-btn'>Cancel</button>
+                            <div className="card_dis d-flex justify-content-between">
+                                <div>
+                                    <button onClick={() => handleDelete(props.bookingUser?._id)} className='pkg-btn'>Cancel</button>
+                                </div>
+                                <div className="card_pri">
+                                    <h4>{details?.price}</h4>
+                                </div>
+                            </div>
                         </Card.Body>
                     </Card>
                 </div> : null
             }
+            {/* {
+                props?.bookingUser?.LogedinUser === user.email && null ? <h1></h1> :  
+            } */}
         </>
     );
 };

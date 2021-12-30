@@ -30,7 +30,7 @@ const BookNow = () => {
     };
 
     return (
-        <div style={{ 'marginTop': '150px', }} >
+        <div style={{ 'marginTop': '120px', }} >
             <Container>
                 <Row>
                     <div className="col-lg-12 d-flex justify-content-center">
@@ -45,7 +45,7 @@ const BookNow = () => {
 
                                 <input type="Number" {...register("Number")} placeholder='Phone number' />
 
-                                <input type="submit" />
+                                <input className='btn_sub' type="submit" />
                             </form>
                         </div>
                     </div>

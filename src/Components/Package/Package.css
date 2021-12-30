@@ -1,3 +1,41 @@
 .package_page {
   margin-top: 100px;
 }
+
+.card_btn {
+  padding: 6px 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #ff4838;
+  color: #ff4838;
+  transition: all linear 0.3s;
+}
+
+.card_btn:hover {
+  background-color: #ff4838;
+  color: #ffffff;
+}
+
+.card_title {
+  background-color: #ff4838;
+  display: inline-block;
+  clip-path: polygon(8% 0, 90% 4%, 100% 100%, 0% 100%);
+  padding: 10px 25px;
+  position: relative;
+  top: -35px;
+}
+
+.card_title p {
+  font-size: 14px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.card_text p {
+  margin-top: -26px;
+}
+
+.card_pri h4 {
+  color: #ff4838;
+  text-decoration: none;
+}

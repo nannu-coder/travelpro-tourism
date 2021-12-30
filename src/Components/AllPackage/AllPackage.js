@@ -15,10 +15,15 @@ const AllPackage = () => {
         <div>
             <Container>
                 <Row>
-                    <div className="packages">
-                        <div className="packages_heading">
-                            <h1>Popular Tour Package</h1>
-                        </div>
+                    <div style={{ 'marginTop': '80px' }} className="packages">
+                        <Row>
+                            <div className="col-lg-12 text-center">
+                                <div className="packages_heading">
+                                    <h1>All Tour Packages</h1>
+                                    <p>Worldexpeditions offer a variety of authentic adventures from multi-day treks and cultural journeys to cycle journeys and mountaineering expeditions. It holds an outstanding brand name for providing awesome services for cultural trips.</p>
+                                </div>
+                            </div>
+                        </Row>
                     </div>
                     {
                         packages.map((packaged) => <ShowAllPackage

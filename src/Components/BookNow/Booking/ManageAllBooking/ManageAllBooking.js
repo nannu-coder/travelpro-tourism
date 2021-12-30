@@ -37,17 +37,39 @@ const ManageAllBooking = (props) => {
     return (
         <div className="col-lg-4">
             <CardGroup>
-                <Card className='booking'>
+                <Card style={{ 'borderRadius': '10px' }} className='booking'>
                     <Card.Img variant="top" src={details?.img} />
                     <Card.Body>
-                        <Card.Title>{details?.date}</Card.Title>
-                        <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
+                        <Card.Title className='card_title'>
+                            <p>{details?.date}</p>
+                        </Card.Title>
+                        <Card.Text className='card_text'>
+                            <p>{details?.des}</p>
                         </Card.Text>
+                        <div class="booker_info d-flex justify-content-between">
+                            <div class="booker">
+                                <h6>Name:</h6>
+                                <h6>email:</h6>
+                                <h6>Number:</h6>
+                                <h6>Address:</h6>
+                            </div>
+                            <div class="info">
+                                <h6>{props?.booked?.fieldData?.Name}</h6>
+                                <h6>{props?.booked?.fieldData?.email}</h6>
+                                <h6>{props?.booked?.fieldData?.Number}</h6>
+                                <h6>{props?.booked?.fieldData?.Address}</h6>
+                            </div>
+                        </div>
                     </Card.Body>
                     <Card.Footer>
-                        <button onClick={() => handleDelete(props.booked?._id)} className='pkg-btn'>Cancel</button>
+                        <div className="card_dis d-flex justify-content-between">
+                            <div>
+                                <button onClick={() => handleDelete(props.booked?._id)} className='pkg-btn'>Cancel</button>
+                            </div>
+                            <div className="card_pri">
+                                <h4>{details?.price}</h4>
+                            </div>
+                        </div>
                     </Card.Footer>
                 </Card>
             </CardGroup>
