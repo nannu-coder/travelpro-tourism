@@ -18,6 +18,7 @@ import MyBooked from './Components/BookNow/Booking/MyBooked/MyBooked';
 import ManageAllBooking from './Components/BookNow/Booking/ManageAllBooking/ManageAllBooking';
 import AddPackage from './Components/AddPackage/AddPackage';
 import AllPackage from './Components/AllPackage/AllPackage';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -83,6 +84,7 @@ function App() {
             </Route>
 
           </Switch>
+          <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
     </>

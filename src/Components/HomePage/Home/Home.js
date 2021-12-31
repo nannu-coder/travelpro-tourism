@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import Packages from '../../Packages/Packages';
 import NewsLetter from '../../NewsLater/NewsLetter'
 import TourGallery from '../../Gallery/TourGallery';
+import TourGuide from '../../TourGuide/TourGuide';
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
             <Packages></Packages>
             <NewsLetter></NewsLetter>
             <TourGallery></TourGallery>
+            <TourGuide></TourGuide>
         </div>
     );
 };
