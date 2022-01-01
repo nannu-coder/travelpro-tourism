@@ -11,7 +11,7 @@ const AddPackage = () => {
 
         console.log(data);
 
-        axios.post('http://localhost:5000/packages', data)
+        axios.post('https://ancient-lake-93961.herokuapp.com/packages', data)
             .then(res => {
                 console.log(res)
                 console.log(res.data);

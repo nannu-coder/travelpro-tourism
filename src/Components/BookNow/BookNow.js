@@ -16,7 +16,7 @@ const BookNow = () => {
         allData['LogedinUser'] = user.email;
         allData['bookingID'] = bookId;
 
-        axios.post('http://localhost:5000/booking', allData)
+        axios.post('https://ancient-lake-93961.herokuapp.com/booking', allData)
             .then(res => {
                 console.log(res)
                 console.log(res.data);

@@ -8,7 +8,7 @@ const ManaqgeBooking = (props) => {
     const [booking, setBooking] = useState();
 
     useEffect(() => {
-        fetch('http://localhost:5000/booking/')
+        fetch('https://ancient-lake-93961.herokuapp.com/booking/')
             .then(res => res.json())
             .then(data => setBooking(data))
     }, [])

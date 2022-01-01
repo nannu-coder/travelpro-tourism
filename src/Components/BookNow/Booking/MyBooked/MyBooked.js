@@ -8,7 +8,7 @@ const MyBooked = (props) => {
     const [packags, setPackages] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/packages/')
+        fetch('https://ancient-lake-93961.herokuapp.com/packages/')
             .then(res => res.json())
             .then(data => setPackages(data))
     }, [])
@@ -19,7 +19,7 @@ const MyBooked = (props) => {
     const handleDelete = id => {
         const sure = window.confirm("are you sure to delete?")
         if (sure) {
-            const url = (`http://localhost:5000/booking/${id}`)
+            const url = (`https://ancient-lake-93961.herokuapp.com/booking/${id}`)
             fetch(url, {
                 method: 'DELETE'
             }).then(res => res.json())

@@ -7,7 +7,7 @@ const MyBooking = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/booking')
+        fetch('https://ancient-lake-93961.herokuapp.com/booking')
             .then(res => res.json())
             .then(data => setLogedUser(data))
     }, [])
